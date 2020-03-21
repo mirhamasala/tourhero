@@ -1,0 +1,13 @@
+body {
+  font-family: $font-sans;
+  color: $black;
+  margin: 0;
+}
+
+a {
+  color: $brand-primary;
+  transition: 0.2s opacity ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}
