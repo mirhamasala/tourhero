@@ -1,0 +1,106 @@
+<div class="tour">
+  <div class="slider">
+    <div class="slider__card">
+      <%= image_tag "singapore.jpeg", class: "slider__image" %>
+    </div>
+    <div class="slider__card">
+      <%= image_tag "singapore.jpeg", class: "slider__image" %>
+      <div class="slider__button">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+    <div class="slider__card">
+      <%= image_tag "singapore.jpeg", class: "slider__image" %>
+    </div>
+  </div>
+  <div class="social-bar">
+    <span class="social-bar__icon">
+      <i class="far fa-share-square"></i>
+    </span>
+    <span class="social-bar__icon">
+      <i class="far fa-heart"></i>
+    </span>
+  </div>
+  <header class="tour__section">
+    <h1 class="tour__title"><%= @tour.name %></h1>
+    <p>There’s something for everyone―world-class theme parks, iconic waterfront attractions, the world’s first night safari, hidden gems to explore in charming neighbourhoods, lush greenery.</p>
+  </header>
+  <div class="tour__section">
+    <div class="map"></div>
+  </div>
+  <section class="tour__section">
+    <div class="tour__details">
+      <div class="tour__detail">
+        <i class="icon far fa-clock"></i>
+        <p class="tour__detail-name">Duration</p>
+        <p class="tour__detail-text"><%= pluralize @tour.length, "day" %></p>
+      </div>
+      <div class="tour__detail">
+        <i class="icon fas fa-globe"></i>
+        <p class="tour__detail-name">Countries</p>
+        <p class="tour__detail-text">2</p>
+      </div>
+      <div class="tour__detail">
+        <i class="icon fas fa-running"></i>
+        <p class="tour__detail-name">Activity Level</p>
+        <p class="tour__detail-text"><%= @tour.level %></p>
+      </div>
+      <div class="tour__detail">
+        <i class="icon fas fa-language"></i>
+        <p class="tour__detail-name">Guide Language</p>
+        <p class="tour__detail-text"><%= @tour.language %></p>
+      </div>
+      <div class="tour__detail">
+        <i class="icon fas fa-clipboard-check"></i>
+        <p class="tour__detail-name">Inclusion</p>
+        <p class="tour__detail-text">Food, Hotel, Transport</p>
+      </div>
+    </div>
+  </section>
+  <section class="tour__section">
+    <div class="tour__sub-title">
+      <div class="header">
+        <span class="header__icon">
+          <i class="icon fas fa-clipboard-list"></i>
+        </span>
+        <h2>Buy With Confidence</h2>
+      </div>
+    </div>
+    <ul class="list">
+      <li class="list__item">
+        <span class="list__icon"><i class="icon fas fa-check-circle"></i></span>
+        <p>0% Instalment payment</p>
+      </li>
+      <li class="list__item">
+        <span class="list__icon"><i class="icon fas fa-check-circle"></i></span>
+        <p>$200 Deposit</p>
+      </li>
+      <li class="list__item">
+        <span class="list__icon"><i class="icon fas fa-check-circle"></i></span>
+        <p>24/7 Support</p>
+      </li>
+      <li class="list__item">
+        <span class="list__icon"><i class="icon fas fa-check-circle"></i></span>
+        <p>No booking fee</p>
+      </li>
+      <li class="list__item">
+        <span class="list__icon"><i class="icon fas fa-check-circle"></i></span>
+        <p>Free cancellation & changes up to 45 days prior </p>
+      </li>
+    </ul>
+  </section>
+  <section class="tour__section">
+    <div class="tour__sub-title">
+      <div class="header">
+        <span class="header__icon">
+          <i class="icon fas fa-map-marked-alt"></i>
+        </span>
+        <h2>Itinerary</h2>
+      </div>
+    </div>
+    <% @tour_stops.each_with_index do |tour_stop, index| %>
+      <%= render partial: "spots/spot_card", locals: { tour_stop: tour_stop, index: index } %>
+    <% end %>
+  </section>
+  <div class="button">Show more days</div>
+</div>
