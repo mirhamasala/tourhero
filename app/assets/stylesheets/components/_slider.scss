@@ -1,0 +1,45 @@
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slider__card {
+  position: relative;
+  flex: 0 0 auto;
+  height: 256px;
+  width: 95%;
+  margin-right: $spacing-2;
+}
+
+.slider__image {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.slider__button {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  color: $white;
+  background-color: $red;
+  border-radius: 50%;
+  box-shadow: 0 0 0 16px rgba($red, 0.2);
+  cursor: pointer;
+  transition: 0.5s ease-in transform;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
