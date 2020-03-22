@@ -1,32 +1,12 @@
 <div class="tour">
-  <div class="slider">
-    <div class="slider__card">
-      <%= image_tag "singapore.jpg", class: "slider__image" %>
-    </div>
-    <div class="slider__card">
-      <%= image_tag "singapore.jpg", class: "slider__image" %>
-      <div class="slider__button">
-        <%= inline_svg_tag "icons/button_play.svg", class: "button-play" %>
-      </div>
-    </div>
-    <div class="slider__card">
-      <%= image_tag "singapore.jpg", class: "slider__image" %>
-    </div>
-  </div>
-  <div class="social-bar">
-    <span class="social-bar__icon">
-      <i class="far fa-share-square"></i>
-    </span>
-    <span class="social-bar__icon">
-      <i class="far fa-heart"></i>
-    </span>
-  </div>
+  <%= render "shared/slider" %>
+  <%= render "shared/social_bar" %>
   <header class="tour__section">
     <h1 class="tour__title"><%= @tour.name %></h1>
     <p>There’s something for everyone―world-class theme parks, iconic waterfront attractions, the world’s first night safari, hidden gems to explore in charming neighbourhoods, lush greenery.</p>
   </header>
   <div class="tour__section">
-    <div class="map"></div>
+    <%= render "shared/map" %>
   </div>
   <section class="tour__section">
     <div class="tour__details">
