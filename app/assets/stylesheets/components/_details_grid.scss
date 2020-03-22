@@ -1,0 +1,23 @@
+.details-grid {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap: $spacing-2;
+}
+
+.details-grid__item {
+  padding-top: $spacing-2;
+  padding-bottom: $spacing-2;
+}
+
+.details-grid__item-name {
+  font-size: $text-xs;
+  text-transform: uppercase;
+  color: $gray;
+  margin-top: $spacing-2;
+  margin-bottom: $spacing-2;
+}
+
+.details-grid__item-text {
+  margin-top: $spacing-2;
+  margin-bottom: $spacing-2;
+}

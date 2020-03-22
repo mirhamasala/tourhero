@@ -1,0 +1,27 @@
+<div class="details-grid">
+  <div class="details-grid__item">
+    <i class="icon far fa-clock"></i>
+    <p class="details-grid__item-name">Duration</p>
+    <p class="details-grid__item-text"><%= pluralize @tour.length, "day" %></p>
+  </div>
+  <div class="details-grid__item">
+    <i class="icon fas fa-globe"></i>
+    <p class="details-grid__item-name">Countries</p>
+    <p class="details-grid__item-text">2</p>
+  </div>
+  <div class="details-grid__item">
+    <i class="icon fas fa-running"></i>
+    <p class="details-grid__item-name">Activity Level</p>
+    <p class="details-grid__item-text"><%= @tour.level %></p>
+  </div>
+  <div class="details-grid__item">
+    <i class="icon fas fa-language"></i>
+    <p class="details-grid__item-name">Guide Language</p>
+    <p class="details-grid__item-text"><%= @tour.language %></p>
+  </div>
+  <div class="details-grid__item">
+    <i class="icon fas fa-clipboard-check"></i>
+    <p class="details-grid__item-name">Inclusion</p>
+    <p class="details-grid__item-text">Food, Hotel, Transport</p>
+  </div>
+</div>

@@ -12,31 +12,7 @@
   </div>
   <section class="tour__section">
     <div class="tour__details">
-      <div class="tour__detail">
-        <i class="icon far fa-clock"></i>
-        <p class="tour__detail-name">Duration</p>
-        <p class="tour__detail-text"><%= pluralize @tour.length, "day" %></p>
-      </div>
-      <div class="tour__detail">
-        <i class="icon fas fa-globe"></i>
-        <p class="tour__detail-name">Countries</p>
-        <p class="tour__detail-text">2</p>
-      </div>
-      <div class="tour__detail">
-        <i class="icon fas fa-running"></i>
-        <p class="tour__detail-name">Activity Level</p>
-        <p class="tour__detail-text"><%= @tour.level %></p>
-      </div>
-      <div class="tour__detail">
-        <i class="icon fas fa-language"></i>
-        <p class="tour__detail-name">Guide Language</p>
-        <p class="tour__detail-text"><%= @tour.language %></p>
-      </div>
-      <div class="tour__detail">
-        <i class="icon fas fa-clipboard-check"></i>
-        <p class="tour__detail-name">Inclusion</p>
-        <p class="tour__detail-text">Food, Hotel, Transport</p>
-      </div>
+      <%= render "tour_details" %>
     </div>
   </section>
   <section class="tour__section">

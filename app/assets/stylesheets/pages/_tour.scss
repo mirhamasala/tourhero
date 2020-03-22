@@ -14,28 +14,3 @@
 .tour__sub-header {
   align-self: center;
 }
-
-.tour__details {
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  grid-gap: $spacing-2;
-}
-
-.tour__detail {
-  padding-top: $spacing-2;
-  padding-bottom: $spacing-2;
-}
-
-.tour__detail-name {
-  font-size: $text-xs;
-  text-transform: uppercase;
-  color: $gray;
-  margin-top: $spacing-2;
-  margin-bottom: $spacing-2;
-}
-
-.tour__detail-text {
-  margin-top: $spacing-2;
-  margin-bottom: $spacing-2;
-}
-
