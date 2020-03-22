@@ -1,10 +1,12 @@
 <div class="tour">
   <%= render "shared/slider" %>
   <%= render "shared/social_bar" %>
-  <header class="tour__section">
-    <h1 class="tour__title"><%= @tour.name %></h1>
-    <p>There’s something for everyone―world-class theme parks, iconic waterfront attractions, the world’s first night safari, hidden gems to explore in charming neighbourhoods, lush greenery.</p>
-  </header>
+  <div class="tour__header">
+    <header class="header">
+      <h1 class="header__title"><%= @tour.name %></h1>
+      <p>There’s something for everyone―world-class theme parks, iconic waterfront attractions, the world’s first night safari, hidden gems to explore in charming neighbourhoods, lush greenery.</p>
+    </header>
+  </div>
   <div class="tour__section">
     <%= render "shared/map" %>
   </div>
