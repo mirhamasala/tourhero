@@ -16,7 +16,8 @@
   margin-right: $spacing-2;
 }
 
-.slider__image {
+.slider__image,
+.slider__video {
   height: 100%;
   width: 100%;
   object-position: center;
