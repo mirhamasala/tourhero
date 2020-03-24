@@ -1,5 +1,4 @@
 class ToursController < ApplicationController
-
   def show
     @tour = Tour.first
     @tour_stops = TourStop.in_tour(@tour)
