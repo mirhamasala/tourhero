@@ -7,6 +7,7 @@
   margin-bottom: $spacing-0;
   padding-left: $spacing-0;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory; /* Slide snaps into place */
   -webkit-overflow-scrolling: touch; /* Smooth swiping for WebKit */
