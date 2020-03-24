@@ -1,14 +1,14 @@
 .social-bar {
   display: flex;
-  padding-top: $spacing-3;
-  padding-bottom: $spacing-3;
+  padding-top: $spacing-2;
+  padding-bottom: $spacing-2;
 }
 
 .social-bar__icon {
   cursor: pointer;
   transition: 0.2s transform ease-in;
   &:not(:last-child) {
-    margin-right: $spacing-4;
+    margin-right: $spacing-2;
   }
   &:hover {
     transform: scale(1.1);
