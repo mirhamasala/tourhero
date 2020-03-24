@@ -1,5 +1,6 @@
 <div class="tour">
   <%= render "shared/slider" %>
+  <%= render partial: "shared/slider_nav", locals: { tour: @tour } %>
   <%= render "shared/social_bar" %>
   <div class="tour__header">
     <header class="header">

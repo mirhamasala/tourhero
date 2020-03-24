@@ -1,0 +1,21 @@
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  padding-top: $spacing-2;
+  padding-bottom: $spacing-2;
+}
+
+.slider-nav__item {
+  width: 1px;
+  height: 1px;
+  padding: $spacing-1;
+  border: 2px solid $brand-primary;
+  border-radius: 50%;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: $spacing-1;
+  }
+  &:focus {
+    background-color: $brand-primary;
+  }
+}

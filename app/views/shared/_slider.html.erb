@@ -1,14 +1,14 @@
-<div class="slider">
-  <div class="slider__card">
+<ul class="slider">
+  <li id="slide-1" class="slider__card" >
     <%= image_tag "singapore.jpg", class: "slider__image" %>
-  </div>
-  <div class="slider__card">
-    <%= video_tag "singapore.jpg", html={class: "slider__video", poster: "singapore.jpg"} %>
-    <div class="slider__button">
+  </li>
+  <li id="slide-2" class="slider__card">
+    <%= video_tag "singapore.jpg", class: "slider__video", poster: "singapore.jpg" %>
+    <div class="slider__video-button">
       <%= inline_svg_tag "icons/button_play.svg", class: "button-play" %>
     </div>
-  </div>
-  <div class="slider__card">
+  </li>
+  <li id="slide-3" class="slider__card">
     <%= image_tag "singapore.jpg", class: "slider__image" %>
-  </div>
-</div>
+  </li>
+</ul>
