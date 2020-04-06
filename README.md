@@ -22,3 +22,8 @@ You must demonstrate the following:
 - you are able to write clean, legible, and maintainable code
 - you are able to write performant code
 - you are able to organise, document your code and your commits
+
+## Resources
+### Further Research
+- [Scrolly carousel](https://codepen.io/robinrendle/pen/qBdGQgv)
+- [Flexbox and Padding](https://www.chenhuijing.com/blog/flexbox-and-padding/)
